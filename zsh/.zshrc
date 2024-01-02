@@ -76,6 +76,7 @@ plugins=(
 	zsh-z
 	zsh-syntax-highlighting
 	fzf
+	kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -130,3 +131,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Aliases
+alias gacp="git add -A; git commit --amend --no-edit -S; git push --force-with-lease"
+alias rm="rm -I"
+alias grep="grep -n --color"
