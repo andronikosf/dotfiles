@@ -135,3 +135,4 @@ unset __conda_setup
 alias gacp="git add -A; git commit --amend --no-edit -S; git push --force-with-lease"
 alias rm="rm -I"
 alias grep="grep -n --color"
+alias v="fdfind --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim"
