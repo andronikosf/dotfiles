@@ -148,6 +148,9 @@ source ~/github/kube-ps1/kube-ps1.sh
 PROMPT='$(kube_ps1)'$'\n'$PROMPT
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export PATH="/home/linuxbrew/.linuxbrew/opt/go@1.17/bin:$PATH"
+# Whenever we use fzf it also displays the file with bat command
+# export FZF_DEFAULT_OPTS="--preview 'bat --color=always {}'"
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/andronikos.filandras/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -168,3 +171,6 @@ alias gacp="git add -A; git commit --amend --no-edit -S; git push --force-with-l
 alias rm="rm -I"
 alias grep="grep -n --color"
 alias v="fdfind --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim"
+alias zshconfig="nvim ~/.zshrc"
+alias tmuxconfig="nvim ~/.tmux.conf"
+alias vz="vim \$(fzf --hidden)"
