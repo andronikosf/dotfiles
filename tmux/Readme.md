@@ -1,6 +1,15 @@
 CHEATSHEET:
-    - Synchronized panes: Sends commands to all panes
+- Change <prefix> to Ctrl+a
+
+- Synchronized panes: Sends commands to all panes
         <prefix> + g
-        command: ```
-                    bind-key g set-window-option synchronize-panes\; display-message "synchronize-panes is now #{?pane_synchronized,on,off}"
-                 ```
+
+- Reload tmux config:
+        <prefix> + r
+
+- Split window horizontaly:
+        <prefix> + |
+
+- Split window verticaly:
+        <prefix> + -
+
