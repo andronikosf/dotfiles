@@ -1,15 +1,11 @@
 CHEATSHEET:
 - Change <prefix> to Ctrl+a
 
-- Synchronized panes: Sends commands to all panes
-        <prefix> + g
+- <prefix> + g : Synchronized panes
 
-- Reload tmux config:
-        <prefix> + r
+- <prefix> + r : Reload tmux config
 
-- Split window horizontaly:
-        <prefix> + |
+- <prefix> + | : Split window horizontaly:
 
-- Split window verticaly:
-        <prefix> + -
+- <prefix> + " : Split window verticaly:
 
