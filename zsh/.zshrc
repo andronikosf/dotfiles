@@ -174,3 +174,4 @@ alias v="fdfind --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs
 alias zshconfig="nvim ~/.zshrc"
 alias tmuxconfig="nvim ~/.tmux.conf"
 alias vz="vim \$(fzf --hidden)"
+alias i3config="nvim ~/.config/i3/config"
