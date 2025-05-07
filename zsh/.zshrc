@@ -8,7 +8,12 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
+#ZSH_THEME="senpai-zsh/senpai" # there are better options cause of kube-ps1
+#ZSH_THEME="dieter"
+#ZSH_THEME="fino"
+#ZSH_THEME="frisk"
+ZSH_THEME="gnzh"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -147,7 +152,7 @@ source $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highli
 source ~/github/kube-ps1/kube-ps1.sh
 PROMPT='$(kube_ps1)'$'\n'$PROMPT
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-export PATH="/home/linuxbrew/.linuxbrew/opt/go@1.17/bin:$PATH"
+#export PATH="/home/linuxbrew/.linuxbrew/opt/go@1.17/bin:$PATH"
 # Whenever we use fzf it also displays the file with bat command
 # export FZF_DEFAULT_OPTS="--preview 'bat --color=always {}'"
 
@@ -173,5 +178,6 @@ alias grep="grep -n --color"
 alias v="fdfind --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim"
 alias zshconfig="nvim ~/.zshrc"
 alias tmuxconfig="nvim ~/.tmux.conf"
+alias alacrittyconfig="nvim ~/.config/alacritty/alacritty.toml"
 alias vz="vim \$(fzf --hidden)"
 alias i3config="nvim ~/.config/i3/config"
