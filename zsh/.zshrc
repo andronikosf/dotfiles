@@ -87,9 +87,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-path+=('/home/andronikos.filandras/bin')
-export PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -155,21 +152,6 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 #export PATH="/home/linuxbrew/.linuxbrew/opt/go@1.17/bin:$PATH"
 # Whenever we use fzf it also displays the file with bat command
 # export FZF_DEFAULT_OPTS="--preview 'bat --color=always {}'"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/andronikos.filandras/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/andronikos.filandras/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/andronikos.filandras/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/andronikos.filandras/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 # Aliases
 alias gacp="git add -A; git commit --amend --no-edit -S; git push --force-with-lease"
