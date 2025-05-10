@@ -164,4 +164,13 @@ alias alacrittyconfig="nvim ~/.config/alacritty/alacritty.toml"
 alias vz="vim \$(fzf --hidden)"
 alias i3config="nvim ~/.config/i3/config"
 alias gbf="git branch | fzf-tmux | xargs git checkout"
+alias gch="git_show_changes"
+
+### CUSTOM functions
+
+git_show_changes() {
+  preview="git diff $@ --color=always -- {-1}"
+  git diff $@ --name-only | fzf -m --ansi --preview $preview
+}
+
 
